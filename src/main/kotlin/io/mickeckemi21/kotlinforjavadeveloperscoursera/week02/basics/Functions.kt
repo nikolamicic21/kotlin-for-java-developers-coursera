@@ -1,5 +1,5 @@
 @file:JvmName("Util")
-package io.mickeckemi21.kotlinforjavadeveloperscoursera.week02
+package io.mickeckemi21.kotlinforjavadeveloperscoursera.week02.basics
 
 private fun main() {
     println(max(1, 5))

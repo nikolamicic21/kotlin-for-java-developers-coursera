@@ -1,4 +1,4 @@
-package io.mickeckemi21.kotlinforjavadeveloperscoursera.week02
+package io.mickeckemi21.kotlinforjavadeveloperscoursera.week02.basics
 
 private fun main() {
     val list = listOf('a', 'b', 'c')
