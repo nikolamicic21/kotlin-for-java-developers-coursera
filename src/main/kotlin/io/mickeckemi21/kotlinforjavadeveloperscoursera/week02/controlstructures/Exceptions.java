@@ -1,4 +1,4 @@
-package io.mickeckemi21.kotlinforjavadeveloperscoursera.week02.exceptions;
+package io.mickeckemi21.kotlinforjavadeveloperscoursera.week02.controlstructures;
 
 import java.io.IOException;
 
