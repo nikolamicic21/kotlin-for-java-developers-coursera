@@ -1,4 +1,4 @@
-package io.mickeckemi21.kotlinforjavadeveloperscoursera.week03.functional
+package io.mickeckemi21.kotlinforjavadeveloperscoursera.week03.functional.quiz1
 
 import io.mickeckemi21.kotlinforjavadeveloperscoursera.week02.extensions.eq
 

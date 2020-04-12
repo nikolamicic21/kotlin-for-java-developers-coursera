@@ -1,4 +1,4 @@
-package io.mickeckemi21.kotlinforjavadeveloperscoursera.week03.functional
+package io.mickeckemi21.kotlinforjavadeveloperscoursera.week03.functional.co
 
 private fun main() {
 
@@ -43,4 +43,4 @@ private fun main() {
 
 }
 
-data class Person(val name: String, val age: Int)
+private data class Person(val name: String, val age: Int)
