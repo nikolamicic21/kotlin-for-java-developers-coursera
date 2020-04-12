@@ -16,12 +16,11 @@ class A
 class Person(val name: String, val age: Int)
 
 class Person1(name: String) {
-    val name: String
+    val name: String = name
 
     // full primary constructor syntax
     init {
         // constructor body
-        this.name = name
     }
 
 }
@@ -39,6 +38,7 @@ class Rectangle(val height: Int, val width: Int) {
 }
 
 interface Base
+
 class BaseImpl : Base
 
 open class Parent {
@@ -46,6 +46,7 @@ open class Parent {
         println("parent")
     }
 }
+
 class Child : Parent(/*constructor call*/) {
     init {
         println("child")

@@ -2,16 +2,18 @@ package io.mickeckemi21.kotlinforjavadeveloperscoursera.week04.oop.cm2
 
 private fun main() {
 
-    // sealed class
-    // restricts class hierarchy
-    // all sub-classes must be located in the same file
-    // sealed class has private default constructor
+    // sealed class:
+    // - restricts class hierarchy
+    // - all sub-classes must be located in the same file
+    // - has private default constructor
     println(eval(Sum(Sum(Num(1), Num(2)), Num(3))))
 
-    // inner and nester classes
-    // Kotlin creates by default nested class (static nested class)
-    // inner keyword is used to define inner class
+    // inner and nester classes:
+    // - Kotlin creates by default nested class (static nested class)
+    // - inner keyword is used to define nested inner class
 
+    // Class delegation:
+    // - delegating to class dependencies if any with keyword 'by'
 
 }
 
@@ -24,7 +26,7 @@ class Sum(val left: Expr, val right: Expr) : Expr()
 fun eval(expr: Expr): Int = when (expr) {
     is Num -> expr.value
     is Sum -> eval(expr.left) + eval(expr.right)
-    else -> 0 // in case the interface not sealed
+    else -> 0 // in case the class not sealed
 }
 
 class A {

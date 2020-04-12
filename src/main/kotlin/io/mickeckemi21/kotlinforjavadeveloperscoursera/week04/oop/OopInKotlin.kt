@@ -7,6 +7,4 @@ private fun main() {
     // final (by default), open
     // abstract, override (mandatory)
 
-
-
 }
