@@ -7,19 +7,14 @@ private fun main() {
 
 }
 
+// TOP-LEVEL
 const val answer = 42
 
 // the same as: public static final Object prop = new Object in Java
 @JvmField
 val prop = 42 // no getter!
 
-// static field
-object A {
-    // static field generated
-    @JvmField
-    val prop = Object()
-}
-
+// REGULAR CLASS
 // regular field
 class B {
     // regular field generated
@@ -27,14 +22,25 @@ class B {
     val prop = Object()
 }
 
-object SuperComputer {
+// OBJECT
+// static field
+object A {
+    // static field generated
     @JvmField
-    /*const*/ val answer = 42
+    val prop = Object()
+}
 
+object SuperComputer {
+    // exposes as a field
+    @JvmField val answer = 42
+
+    // exposes as public static field
     const val reason = "Why not?"
 
+    // accessed with getter within Singleton instance
     val question = "?"
 
+    // creates static method returning the static field
     @JvmStatic
     val known = "no"
 }

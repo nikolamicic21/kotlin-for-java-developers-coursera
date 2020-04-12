@@ -10,24 +10,30 @@ public class Constants {
         // top-level constants
         // defined with const
         System.out.println(ConstantsKt.answer);
+
         // defined with @JvmField
         System.out.println(ConstantsKt.prop);
 
-        Object obj = A.INSTANCE.prop;
+//        Object prop = A.INSTANCE.prop;
+        // @JvmField
+        Object prop1 = A.prop;
 
         // const exposes 'answer' as
-        // static field when user from Java
+        // static field when used from Java
         // which inlines the value (better performance)
-        System.out.println(SuperComputer.answer);
+        System.out.println(SuperComputer.reason);
+
         // @JvmField exposes a field
         // through the property
-        System.out.println(SuperComputer.reason);
+        System.out.println(SuperComputer.answer);
+
         // without any annotation
         // field becomes available with getter
         // as a member of instance field
         SuperComputer.INSTANCE.getQuestion();
-        // to expose getter without using instance field
-        // @JvmStatic should be used
+
+        // to expose getter without using instance
+        // field @JvmStatic should be used
         SuperComputer.getKnown();
 
     }
