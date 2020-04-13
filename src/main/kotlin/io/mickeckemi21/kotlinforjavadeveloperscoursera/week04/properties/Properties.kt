@@ -32,6 +32,7 @@ class Person(val name: String, var age: String)
 
 class Rectangle(val height: Int, val width: Int) {
 
+    // doesn't have a field
     val isSquare: Boolean
         get() {
             return this.height == this.width
