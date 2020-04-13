@@ -11,16 +11,9 @@ private fun main() {
 }
 
 fun fibonacci() = sequence {
-    var n2 = 0
-    var n1 = 1
-    var next: Int
-
-    yield(n2)
-    yield(n1)
+    var pair = Pair(0, 1)
     while (true) {
-        next = n2 + n1
-        yield(next)
-        n2 = n1
-        n1 = next
+        yield(pair.first)
+        pair = Pair(pair.second, pair.first + pair.second)
     }
 }
