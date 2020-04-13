@@ -17,4 +17,6 @@ private fun main() {
     // be called directly without inlining
     // they are only visible in Kotlin
 
+    // good for eliminating allocations of lambda objects
+
 }
